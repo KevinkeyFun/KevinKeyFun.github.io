@@ -1,9 +1,10 @@
-<html>
+---
+layout: default
+title: "About"
+---
 
-<body>
-  <h1> Kevin Lau</h1>
-  <p> Welcome to my website</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"/ >
-</body>
-  
-</html>
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
